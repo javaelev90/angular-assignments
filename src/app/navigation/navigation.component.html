@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <app-navbutton *ngFor="let item of navButtons" [routerLink]="item.link">
+      {{item.name}}
+    </app-navbutton>
+    <span class="example-spacer"></span>
+  </mat-toolbar-row>
+</mat-toolbar>

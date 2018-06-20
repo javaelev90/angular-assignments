@@ -1,0 +1,7 @@
+.item-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width:300px;
+    height: fit-content;
+}

@@ -1,0 +1,8 @@
+<mat-toolbar-row>
+  <app-navbutton (click)="setActiveTab(item.name)" *ngFor="let item of navButtons">
+    {{item.name}}
+  </app-navbutton>
+</mat-toolbar-row>
+<div *ngIf="activeTab=='Whiskey'">Whiskey</div>
+<div *ngIf="activeTab=='Wine'">Wine</div>
+<div *ngIf="activeTab=='Beer'">Beer</div>

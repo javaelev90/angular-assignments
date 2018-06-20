@@ -1,0 +1,24 @@
+<div id="fizzbuzz-form">
+  <table>
+    <thead>
+      <th><label>Start number:</label></th>
+      <th><label>End number:</label></th>
+      <th><label>Fizz number:</label></th>
+      <th><label>Buzz number:</label></th>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input [(ngModel)]="startnum" type="number" id="startnum"/></td>
+        <td><input [(ngModel)]="endnum" type="number" id="endnum"/></td>
+        <td><input [(ngModel)]="fizznum" type="number" id="fizznum"/></td>
+        <td><input [(ngModel)]="buzznum" type="number" id="buzznum"/></td>
+      </tr> 
+    </tbody>
+  </table>
+  <button value="Calculate" (click)="fizzbuzz()">
+  Generate
+  </button>
+</div>
+<div id="result">
+    {{result}}
+</div>

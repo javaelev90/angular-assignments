@@ -1,0 +1,23 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.tooltip {
+    font-size: 14pt;
+    background-color: yellow;
+    color: black !important;
+}
+
+#name {
+    font-size: 18pt;
+}
+#description {
+    font-size: 14pt;
+}
+#price {
+    font-size: 14pt;
+    font-family: 'Courier New', Courier, monospace;
+}

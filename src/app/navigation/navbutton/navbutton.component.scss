@@ -1,0 +1,17 @@
+@import "src/theme.scss";
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.block:hover {
+    background-color: $accent;
+    cursor: pointer;
+}
+
+.active {
+    background-color: $accent;
+}
