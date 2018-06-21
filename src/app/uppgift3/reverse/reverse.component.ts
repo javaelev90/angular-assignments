@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-reverse',
@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ReverseComponent implements OnInit {
 
-  @Input() inputString: String = "";
+  inputString: String = "";
 
   constructor() { }
 

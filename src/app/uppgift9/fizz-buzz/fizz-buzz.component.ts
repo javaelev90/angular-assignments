@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-fizz-buzz',
@@ -7,10 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FizzBuzzComponent implements OnInit {
 
-  @Input() startnum: number = 0;
-  @Input() endnum: number = 100;
-  @Input() fizznum: number = 3;
-  @Input() buzznum: number = 4;
+  startnum: number = 0;
+  endnum: number = 100;
+  fizznum: number = 3;
+  buzznum: number = 4;
 
   result: string;
 
@@ -21,10 +21,6 @@ export class FizzBuzzComponent implements OnInit {
 
   fizzbuzz(){
 
-    console.log(this.startnum);
-    console.log(this.endnum);
-    console.log(this.fizznum);
-    console.log(this.buzznum);
     if(isNaN(this.startnum) || isNaN(this.endnum) || isNaN(this.fizznum) || isNaN(this.buzznum)){
         alert("You can only input numbers");
         return;
